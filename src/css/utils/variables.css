@@ -1,0 +1,22 @@
+:root {
+  --scrollbar-thumb-bg: rgba(18, 20, 23, 0.1);
+  --scrollbar-track-bg: rgba(255, 255, 255, 1);
+
+  /* Breakpoints */
+  --mobile: 375px;
+  --mobile-max: 767.98px;
+  --tablet: 768px;
+  --table-max: 1439.98px;
+  --desktop: 1440px;
+
+  /* Transition properties */
+  --transition-time: 250ms;
+  --transition-effect: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Backdrop */
+  --background-color: rgba(0, 0, 0, 0.6);
+
+  /* Fonts */
+  --primary-font-family: 'Manrope', sans-serif;
+  --accent-font-family: 'Mulish', sans-serif;
+}
