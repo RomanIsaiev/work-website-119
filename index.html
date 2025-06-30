@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Профессиональный курс - Ведической Астрологии</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
@@ -11,10 +11,575 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <p class="header-desc">Профессиональный курс</p>
+          <p class="header-name">Ведической Астрологии</p>
+          <p class="start">
+            старт <span id="dateElement"></span>
+            <span id="monthElement"></span>
+          </p>
+        </div>
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="hero">
+        <div class="header-connect"></div>
+        <div class="container">
+          <h1 class="title">
+            Пройдите путь от полного нуля до глубокого понимания здоровья,
+            отношений, финансов и задач души
+          </h1>
+          <p class="desc">
+            — и научитесь видеть закономерности жизни, управлять периодами и
+            помогать другим с уверенностью и результатом
+          </p>
+          <ul class="list">
+            <li class="list-item">
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/hero/item-01-1x-desktop.png 1x,
+                    ./src/img/hero/item-01-2x-desktop.png 2x
+                  "
+                  width="44"
+                  height="auto"
+                  media="(min-width: 440px)" />
+                <source
+                  srcset="
+                    ./src/img/hero/item-01-1x.png 1x,
+                    ./src/img/hero/item-01-2x.png 2x
+                  "
+                  width="24"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/hero/item-01-1x.png"
+                  alt="item image"
+                  width="24"
+                  height="auto"
+              /></picture>
+              <p class="item-text">Доступно даже с полного 0</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/item-02-1x-desktop.png 1x,
+                    ./src/img/hero/item-02-2x-desktop.png 2x
+                  "
+                  width="44"
+                  height="auto"
+                  media="(min-width: 440px)" />
+                <source
+                  srcset="
+                    ./src/img/hero/item-02-1x.png 1x,
+                    ./src/img/hero/item-02-2x.png 2x
+                  "
+                  width="24"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/hero/item-02-1x.png"
+                  alt="item image"
+                  width="24"
+                  height="auto"
+              /></picture>
+              <p class="item-text">Поддержка и проверка на каждом этапе</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/item-03-1x-desktop.png 1x,
+                    ./src/img/hero/item-03-2x-desktop.png 2x
+                  "
+                  width="44"
+                  height="auto"
+                  media="(min-width: 440px)" />
+                <source
+                  srcset="
+                    ./src/img/hero/item-03-1x.png 1x,
+                    ./src/img/hero/item-03-2x.png 2x
+                  "
+                  width="24"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/hero/item-03-1x.png"
+                  alt="item image"
+                  width="24"
+                  height="auto"
+              /></picture>
+              <p class="item-text">Реальные изменения с первого модуля</p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/item-04-1x-desktop.png 1x,
+                    ./src/img/hero/item-04-2x-desktop.png 2x
+                  "
+                  width="44"
+                  height="auto"
+                  media="(min-width: 440px)" />
+                <source
+                  srcset="
+                    ./src/img/hero/item-04-1x.png 1x,
+                    ./src/img/hero/item-04-2x.png 2x
+                  "
+                  width="24"
+                  height="auto" />
+                <img
+                  class="item-image"
+                  src="./src/img/hero/item-04-1x.png"
+                  alt="item image"
+                  width="24"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                Видите результаты — идёте дальше с уверенностью
+              </p>
+            </li>
+          </ul>
+          <picture
+            ><source
+              srcset="
+                ./src/img/hero/bg-author-1x-mobile.png 1x,
+                ./src/img/hero/bg-author-2x-mobile.png 2x
+              "
+              width="541"
+              height="auto"
+              media="(min-width: 440px)" />
+            <source
+              srcset="
+                ./src/img/hero/bg-author-1x-mobile.png 1x,
+                ./src/img/hero/bg-author-2x-mobile.png 2x
+              "
+              width="367"
+              height="auto" />
+            <img
+              class="hero-bg-author"
+              src="./src/img/hero/bg-author-1x-mobile.png"
+              alt="item image"
+              width="367"
+              height="auto"
+          /></picture>
+        </div>
+      </section>
+      <section class="tarrifs">
+        <div class="container">
+          <ul class="list">
+            <li class="list-item">
+              <div class="item-box">
+                <div class="item-name-box">
+                  <p class="item-name">Social</p>
+                </div>
+                <ul class="list-points">
+                  <li class="item-point">Модуль 1</li>
+                  <li class="item-point">Модуль 2</li>
+                  <li class="item-point">Модуль 3</li>
+                  <li class="item-point">Модуль 4</li>
+                  <li class="item-point">Модуль 5</li>
+                  <li class="item-point">Модуль 6</li>
+                  <li class="item-point">
+                    Срок обучения+срок доступа к материалам:
+                    <span>12 мес+2 мес</span>
+                  </li>
+                  <li class="item-point">ДЗ с обратной связью от куратора</li>
+                  <li class="item-point">Чат с группой и кураторами</li>
+                  <li class="item-point">Групповые онлайн-занятия</li>
+                  <li class="item-point off">
+                    Личная консультация от куратора
+                  </li>
+                  <li class="item-point off">VIP-чат в Викторией</li>
+                  <li class="item-point off">
+                    Личная консультация от Виктории
+                  </li>
+                  <li class="item-point off">Курс "Ведическая Нумерология"</li>
+                  <li class="item-point off">Курс "Долги Рода"</li>
+                  <li class="item-point off">Курс “Личная стратегия успеха”</li>
+                </ul>
+              </div>
+              <div class="item-price-box">
+                <div class="old-price-wrapper">
+                  <div class="old-price-box">
+                    <p class="old-price-desc">12 месяцев</p>
+                    <p class="old-price">$3680</p>
+                  </div>
+                  <div class="old-price-box">
+                    <p class="old-price-desc">1 месяц</p>
+                    <p class="old-price">$336</p>
+                  </div>
+                </div>
+                <div class="new-price-wrapper">
+                  <div class="new-price-box">
+                    <p class="new-price-desc">12 месяцев</p>
+                    <p class="new-price">$1680</p>
+                  </div>
+                  <div class="new-price-box">
+                    <p class="new-price-desc">1 месяц</p>
+                    <p class="new-price">$168</p>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-reserv">Забронировать</button>
+              <button class="btn-join">Присоединиться</button>
+            </li>
+            <li class="list-item">
+              <div class="item-box">
+                <div class="item-name-box">
+                  <p class="item-name">Optimal</p>
+                </div>
+                <ul class="list-points">
+                  <li class="item-point">Модуль 1</li>
+                  <li class="item-point">Модуль 2</li>
+                  <li class="item-point">Модуль 3</li>
+                  <li class="item-point">Модуль 4</li>
+                  <li class="item-point">Модуль 5</li>
+                  <li class="item-point">Модуль 6</li>
+                  <li class="item-point">
+                    Срок обучения+срок доступа к материалам:
+                    <span>12 мес+4 мес</span>
+                  </li>
+                  <li class="item-point">ДЗ с обратной связью от куратора</li>
+                  <li class="item-point">Чат с группой и кураторами</li>
+                  <li class="item-point">Групповые онлайн-занятия</li>
+                  <li class="item-point">Личная консультация от куратора</li>
+                  <li class="item-point off">VIP-чат в Викторией</li>
+                  <li class="item-point off">
+                    Личная консультация от Виктории
+                  </li>
+                  <li class="item-point">Курс "Ведическая Нумерология"</li>
+                  <li class="item-point off">Курс "Долги Рода"</li>
+                  <li class="item-point off">Курс “Личная стратегия успеха”</li>
+                </ul>
+              </div>
+              <div class="item-price-box">
+                <div class="old-price-wrapper">
+                  <div class="old-price-box">
+                    <p class="old-price-desc">12 месяцев</p>
+                    <p class="old-price">$5040</p>
+                  </div>
+                  <div class="old-price-box">
+                    <p class="old-price-desc">1 месяц</p>
+                    <p class="old-price">$492</p>
+                  </div>
+                </div>
+                <div class="new-price-wrapper">
+                  <div class="new-price-box">
+                    <p class="new-price-desc">12 месяцев</p>
+                    <p class="new-price">$2520</p>
+                  </div>
+                  <div class="new-price-box">
+                    <p class="new-price-desc">1 месяц</p>
+                    <p class="new-price">$246</p>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-reserv">Забронировать</button>
+              <button class="btn-join">Присоединиться</button>
+            </li>
+            <li class="list-item">
+              <div class="item-box">
+                <div class="item-name-box">
+                  <p class="item-name">Premium</p>
+                </div>
+                <ul class="list-points">
+                  <li class="item-point">Модуль 1</li>
+                  <li class="item-point">Модуль 2</li>
+                  <li class="item-point">Модуль 3</li>
+                  <li class="item-point">Модуль 4</li>
+                  <li class="item-point">Модуль 5</li>
+                  <li class="item-point">Модуль 6</li>
+                  <li class="item-point">
+                    Срок обучения+срок доступа к материалам:
+                    <span>12 мес+6 мес</span>
+                  </li>
+                  <li class="item-point">ДЗ с обратной связью от куратора</li>
+                  <li class="item-point">Чат с группой и кураторами</li>
+                  <li class="item-point">Групповые онлайн-занятия</li>
+                  <li class="item-point">Личная консультация от куратора</li>
+                  <li class="item-point">VIP-чат в Викторией</li>
+                  <li class="item-point">Личная консультация от Виктории</li>
+                  <li class="item-point">Курс "Ведическая Нумерология"</li>
+                  <li class="item-point">Курс "Долги Рода"</li>
+                  <li class="item-point">Курс “Личная стратегия успеха”</li>
+                </ul>
+              </div>
+              <div class="item-price-box">
+                <div class="old-price-wrapper">
+                  <div class="old-price-box">
+                    <p class="old-price-desc">12 месяцев</p>
+                    <p class="old-price">$8640</p>
+                  </div>
+                  <div class="old-price-box">
+                    <p class="old-price-desc">1 месяц</p>
+                    <p class="old-price">$840</p>
+                  </div>
+                </div>
+                <div class="new-price-wrapper">
+                  <div class="new-price-box">
+                    <p class="new-price-desc">12 месяцев</p>
+                    <p class="new-price">$4320</p>
+                  </div>
+                  <div class="new-price-box">
+                    <p class="new-price-desc">1 месяц</p>
+                    <p class="new-price">$420</p>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-reserv">Забронировать</button>
+              <button class="btn-join">Присоединиться</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="bonuses">
+        <div class="container">
+          <div class="bonuses-title-box">
+            <picture>
+              <source
+                srcset="
+                  ./src/img/bonuses/title-gift-1x-desktop.png 1x,
+                  ./src/img/bonuses/title-gift-2x-desktop.png 2x
+                "
+                width="335"
+                height="auto" />
+              <img
+                class="title-bonus-image-desktop"
+                src="./src/img/bonuses/title-gift-1x-desktop.png"
+                alt="gift image"
+                width="335"
+                height="auto"
+            /></picture>
+            <div class="bonus-title-text">
+              <h2 class="title">
+                Успейте присоединиться сегодня и забирайте ваши бонусы
+              </h2>
+              <div id="countdown" class="countdown">
+                <div class="countdown-number">
+                  <span class="hours countdown-time"></span>
+                  <div class="countdown-label hours-label">ч</div>
+                </div>
+                <div><span class="countdown-doubledot">|</span></div>
+                <div class="countdown-number">
+                  <span class="minutes countdown-time"></span>
+                  <div class="countdown-label minutes-label">м</div>
+                </div>
+                <div><span class="countdown-doubledot">|</span></div>
+                <div class="countdown-number">
+                  <span class="seconds countdown-time"></span>
+                  <div class="countdown-label seconds-label">с</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <picture>
+            <source
+              srcset="
+                ./src/img/bonuses/title-gift-1x.png 1x,
+                ./src/img/bonuses/title-gift-2x.png 2x
+              "
+              width="147"
+              height="auto" />
+            <img
+              class="title-bonus-image"
+              src="./src/img/bonuses/title-gift-1x.png"
+              alt="gift image"
+              width="147"
+              height="auto"
+          /></picture>
+          <p class="bonuses-reserv">Если вносите бронь 1000грн</p>
+          <p class="bonuses-reserv-desc">*после старта курса</p>
+          <ul class="main-list">
+            <li class="main-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x-desktop.png 1x,
+                    ./src/img/bonuses/bonus-01-2x-desktop.png 2x
+                  "
+                  width="300"
+                  height="auto"
+                  media="(min-width: 440px)" />
+                <source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="260"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus image"
+                  width="260"
+                  height="auto"
+              /></picture>
+              <p class="item-text">Мастер-класс „Карма Рода“</p>
+            </li>
+            <li class="main-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-02-1x-desktop.png 1x,
+                    ./src/img/bonuses/bonus-02-2x-desktop.png 2x
+                  "
+                  width="300"
+                  height="auto"
+                  media="(min-width: 440px)" />
+                <source
+                  srcset="
+                    ./src/img/bonuses/bonus-02-1x.png 1x,
+                    ./src/img/bonuses/bonus-02-2x.png 2x
+                  "
+                  width="260"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-02-1x.png"
+                  alt="bonus image"
+                  width="260"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                Мини-консультация от куратора по вашей карте
+              </p>
+            </li>
+            <li class="main-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-03-1x-desktop.png 1x,
+                    ./src/img/bonuses/bonus-03-2x-desktop.png 2x
+                  "
+                  width="300"
+                  height="auto"
+                  media="(min-width: 440px)" />
+                <source
+                  srcset="
+                    ./src/img/bonuses/bonus-03-1x.png 1x,
+                    ./src/img/bonuses/bonus-03-2x.png 2x
+                  "
+                  width="260"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-03-1x.png"
+                  alt="bonus image"
+                  width="260"
+                  height="auto"
+              /></picture>
+              <p class="item-text">Курс „Мама может“</p>
+            </li>
+          </ul>
+          <p class="bonus-month-pay">Если оплачиваете 1 месяц</p>
+          <span class="bonus-plus">+</span>
+          <ul class="main-list">
+            <li class="main-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-04-1x-desktop.png 1x,
+                    ./src/img/bonuses/bonus-04-2x-desktop.png 2x
+                  "
+                  width="300"
+                  height="auto"
+                  media="(min-width: 440px)" />
+                <source
+                  srcset="
+                    ./src/img/bonuses/bonus-04-1x.png 1x,
+                    ./src/img/bonuses/bonus-04-2x.png 2x
+                  "
+                  width="260"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-04-1x.png"
+                  alt="bonus image"
+                  width="260"
+                  height="auto"
+              /></picture>
+              <p class="item-text">
+                Индивидуальное занятие от куратора или меня, в зависимости от
+                тарифа
+              </p>
+            </li>
+            <li class="main-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-05-1x-desktop.png 1x,
+                    ./src/img/bonuses/bonus-05-2x-desktop.png 2x
+                  "
+                  width="300"
+                  height="auto"
+                  media="(min-width: 440px)" />
+                <source
+                  srcset="
+                    ./src/img/bonuses/bonus-05-1x.png 1x,
+                    ./src/img/bonuses/bonus-05-2x.png 2x
+                  "
+                  width="260"
+                  height="auto" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-05-1x.png"
+                  alt="bonus image"
+                  width="260"
+                  height="auto"
+              /></picture>
+              <p class="item-text">Продление сроков доступа</p>
+            </li>
+          </ul>
+          <p class="full-pay">При полной оплате</p>
+          <div class="full-wrapper">
+            <span class="full-plus">+</span>
+            <div class="full-box">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/gift-1x-desktop.png 1x,
+                    ./src/img/bonuses/gift-2x-desktop.png 2x
+                  "
+                  width="222"
+                  height="auto"
+                  media="(min-width: 440px)" />
+                <source
+                  srcset="
+                    ./src/img/bonuses/gift-1x-mobile.png 1x,
+                    ./src/img/bonuses/gift-2x-mobile.png 2x
+                  "
+                  width="114"
+                  height="auto" />
+                <img
+                  class="gift-image"
+                  src="./src/img/bonuses/gift-1x-mobile.png"
+                  alt="bonus image"
+                  width="114"
+                  height="auto"
+              /></picture>
+              <p class="upgrade-text">
+                <span>апгрейд тарифа</span> <br />
+                Т.е. вы экономите от $840 до $1800
+              </p>
+            </div>
+          </div>
+          <div class="full-text-wrapper">
+            <p class="full-desc">
+              Для тех, кто полностью оплачивает Premium, сделаю консультации для
+              семьи
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer"><div class="container"></div></footer>
+    <script type="module" src="./src/js/changeDate.js"></script>
+    <script type="module" src="./src/js/timer.js"></script>
   </body>
 </html>
+
+<!-- media="(min-width: 600px)" -->
