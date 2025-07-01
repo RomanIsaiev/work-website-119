@@ -569,7 +569,7 @@
   .tarrifs .list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 20px;
   }
@@ -579,7 +579,7 @@
     overflow: hidden;
 
     width: 100%;
-    max-width: 392px;
+    /* max-width: 360px; */
   }
 
   .tarrifs .item-box {
