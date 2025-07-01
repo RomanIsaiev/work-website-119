@@ -1252,6 +1252,7 @@
 
 body.modal-open {
   overflow: hidden;
+  position: relative;
 }
 
 .backdrop {
@@ -1263,7 +1264,7 @@ body.modal-open {
   background: rgba(46, 47, 66, 0.4);
   backdrop-filter: blur(5px);
   opacity: 1;
-  visibility: none;
+  visibility: unset;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1279,14 +1280,15 @@ body.modal-open {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
+  top: 20px;
   left: 50%;
-  top: 50%;
+  transform: translateX(-50%);
 
-  padding-top: 50px;
-  padding-right: 6px;
-  padding-bottom: 24px;
-  padding-left: 6px;
+  max-height: calc(100vh - 40px); /* Чтобы не выходила за пределы экрана */
+  overflow-y: auto;
+
+  padding: 50px 6px 24px;
 
   max-width: 375px;
   width: 100%;
@@ -1295,23 +1297,21 @@ body.modal-open {
   background: #ffffff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transform: translate(-50%, -50%);
+
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-box {
-  height: auto;
+  max-height: 100%;
   overflow: auto;
 }
 
 .close-button {
   position: absolute;
   top: 10px;
-  right: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: inherit;
+  right: 10px;
+  z-index: 10;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
