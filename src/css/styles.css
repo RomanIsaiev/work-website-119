@@ -571,7 +571,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 32px;
+    gap: 20px;
   }
 
   .tarrifs .list-item {
