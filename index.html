@@ -224,8 +224,12 @@
                   </div>
                 </div>
               </div>
-              <button class="btn-reserv">Забронировать</button>
-              <button class="btn-join">Присоединиться</button>
+              <button class="btn-reserv" data-modal-open="modal1">
+                Забронировать
+              </button>
+              <button class="btn-join" data-modal-open="modal2">
+                Присоединиться
+              </button>
             </li>
             <li class="list-item">
               <div class="item-box">
@@ -278,8 +282,12 @@
                   </div>
                 </div>
               </div>
-              <button class="btn-reserv">Забронировать</button>
-              <button class="btn-join">Присоединиться</button>
+              <button class="btn-reserv" data-modal-open="modal1">
+                Забронировать
+              </button>
+              <button class="btn-join" data-modal-open="modal2">
+                Присоединиться
+              </button>
             </li>
             <li class="list-item">
               <div class="item-box">
@@ -330,8 +338,12 @@
                   </div>
                 </div>
               </div>
-              <button class="btn-reserv">Забронировать</button>
-              <button class="btn-join">Присоединиться</button>
+              <button class="btn-reserv" data-modal-open="modal1">
+                Забронировать
+              </button>
+              <button class="btn-join" data-modal-open="modal2">
+                Присоединиться
+              </button>
             </li>
           </ul>
         </div>
@@ -576,9 +588,46 @@
         </div>
       </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <div class="backdrop is-hidden" data-modal="modal1">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./src/img/close-modal-icon.svg"
+            width="30"
+            height="30"
+            alt="close"
+          />
+        </button>
+        <div class="modal-box">
+          <script
+            id="006a3f6ec4aec884dec6eee62da938ae5180b98e"
+            src="https://vikabardadym.in.ua/pl/lite/widget/script?id=1446301"
+          ></script>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-modal="modal2">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./src/img/close-modal-icon.svg"
+            width="30"
+            height="30"
+            alt="close"
+          />
+        </button>
+        <div class="modal-box">
+          <script
+            id="2698d5e5bac9a9cfe290c858aebe66d7ea30b7d1"
+            src="https://vikabardadym.in.ua/pl/lite/widget/script?id=39979"
+          ></script>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="./src/js/changeDate.js"></script>
     <script type="module" src="./src/js/timer.js"></script>
+    <script type="module" src="./src/js/js-modal.js"></script>
   </body>
 </html>
 
